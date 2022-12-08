@@ -1,0 +1,3 @@
+mlflow run model/example-decision-tree -P tree_depth=3
+or 
+mlflow run git@github.com:FernandoLpz/MLflow-example.git -P tree_depth=3
