@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Coding/mlflow/mlflow-2/mlruns/0/842eac433ff54bf6a1b6fac5392f4c47/artifacts
+end_time: 1670475108401
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 842eac433ff54bf6a1b6fac5392f4c47
+run_name: train
+run_uuid: 842eac433ff54bf6a1b6fac5392f4c47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670475080626
+status: 3
+tags: []
+user_id: dipal

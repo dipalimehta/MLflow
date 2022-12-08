@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Coding/mlflow/mlflow-2/mlruns/0/0e1f7cdb54cf40d89bfc7466899496a8/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e1f7cdb54cf40d89bfc7466899496a8
+run_name: wistful-bear-883
+run_uuid: 0e1f7cdb54cf40d89bfc7466899496a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670475271259
+status: 1
+tags: []
+user_id: dipal

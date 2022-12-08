@@ -1,0 +1,40 @@
+__main__ - ERROR - 2022-12-08 10:24:31,332 - Failed to run workflow due to error:
+Could not find Conda executable at conda. Ensure Conda is installed as per the instructions at https://conda.io/projects/conda/en/latest/user-guide/install/index.html. You can also configure MLflow to look for a specific Conda executable by setting the MLFLOW_CONDA_HOME environment variable to the path of the Conda executable
+__main__ - ERROR - 2022-12-08 10:24:31,571 - Traceback (most recent call last):
+  File "D:\Programming\lib\site-packages\mlflow\utils\conda.py", line 242, in get_or_create_conda_env
+    process._exec_cmd([conda_path, "--help"], throw_on_error=False)
+  File "D:\Programming\lib\site-packages\mlflow\utils\process.py", line 95, in _exec_cmd
+    process = subprocess.Popen(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Coding\mlflow\mlflow-2\main.py", line 40, in <module>
+    workflow()
+  File "D:\Programming\lib\site-packages\click\core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\Programming\lib\site-packages\click\core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "D:\Programming\lib\site-packages\click\core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\Programming\lib\site-packages\click\core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "D:\Coding\mlflow\mlflow-2\main.py", line 25, in workflow
+    _run("load_raw_data")
+  File "D:\Coding\mlflow\mlflow-2\main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "D:\Programming\lib\site-packages\mlflow\projects\__init__.py", line 329, in run
+    submitted_run_obj = _run(
+  File "D:\Programming\lib\site-packages\mlflow\projects\__init__.py", line 102, in _run
+    submitted_run = backend.run(
+  File "D:\Programming\lib\site-packages\mlflow\projects\backend\local.py", line 155, in run
+    conda_env = get_or_create_conda_env(project.env_config_path)
+  File "D:\Programming\lib\site-packages\mlflow\utils\conda.py", line 244, in get_or_create_conda_env
+    raise ExecutionException(
+mlflow.exceptions.ExecutionException: Could not find Conda executable at conda. Ensure Conda is installed as per the instructions at https://conda.io/projects/conda/en/latest/user-guide/install/index.html. You can also configure MLflow to look for a specific Conda executable by setting the MLFLOW_CONDA_HOME environment variable to the path of the Conda executable
+
